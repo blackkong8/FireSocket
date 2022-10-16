@@ -10,7 +10,7 @@ export class FireSocket {
     onopen = () => { }
 
     //---Method---
-    close() {
+    close(code = 1000, reason = '') {
         this.onclose()
     }
 
