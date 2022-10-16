@@ -11,7 +11,10 @@ export class FireSocket {
 
     //---Method---
     close(code = 1000, reason = '') {
-        this.onclose()
+        this.onclose({
+            code, reason,
+            wasClean: true
+        })
     }
 
     send(data) {
