@@ -28,7 +28,7 @@ export class FireSocket {
 
         onValue(this.reference, (snapshot) => {
             const data = snapshot.val()
-            this.onmessage(data)
+            this.onmessage({data,})
         })
 
         this.onopen({})
