@@ -31,6 +31,6 @@ export class FireSocket {
             this.onmessage(data)
         })
 
-        this.onopen()
+        this.onopen({})
     }
 }
